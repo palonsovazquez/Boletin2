@@ -18,15 +18,15 @@ public static Scanner sca = new Scanner(System.in);
      */
     public static void main(String[] args) {
         
-    Integer CantDin,num100,num20,num5,num1,resto;
+    Integer cantDin,num100,num20,num5,num1;
     
-    CantDin        = pedirNumero( "la Cantidad");
-    num100 = CantDin/100;
-    CantDin = CantDin%100;
-    num20 = CantDin/20;
-    CantDin = CantDin%20;
-    num5 = CantDin/5;
-    num1 = CantDin%5;
+    cantDin        = pedirNumero( "la Cantidad");
+    num100 = cantDin/100;
+    cantDin = cantDin%100;
+    num20 = cantDin/20;
+    cantDin = cantDin%20;
+    num5 = cantDin/5;
+    num1 = cantDin%5;
     
     System.out.println("la cantidad de billetes de 100€ es :"+ num100);
     System.out.println("la cantidad de billetes de 20€  es :"+ num20);
