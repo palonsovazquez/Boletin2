@@ -38,67 +38,51 @@ public static Scanner sca = new Scanner(System.in);
         
         
     }
-    public static Double pedirNumeroDouble(String nombreDato){
-    Double res;
+    public static Double pedirNumeroDouble(String nombreDato) {
+        Double res;
         do {
-    System.out.print("Introduzca "+ nombreDato+": ");
-    res = comprobarNumDouble( sca.nextLine());
-    System.out.println();
-    }while(res == null);  // pedira el dato hasta que e introduzca un numero valido.
-    return res;
-    
-    
+            System.out.print("Introduzca " + nombreDato + ": ");
+            res = comprobarNumDouble(sca.nextLine());
+            System.out.println();
+        } while (res == null);  // pedira el dato hasta que e introduzca un numero valido.
+        return res;
+
     }
-     public static  Double comprobarNumDouble(String numero){
-         Double x ;
-        try{   // lo parseo y si no es un numero valido asigna a x el valor de nulo.
-           x =  Double.parseDouble(numero); 
-        }catch(Exception ex){
-            x=null;
-            
-     }
-      
-            
-            
-            return x;
-      
-        
-        
 
+    public static Double comprobarNumDouble(String numero) {
+        Double x;
+        try {   // lo parseo y si no es un numero valido asigna a x el valor de nulo.
+            x = Double.parseDouble(numero);
+        } catch (Exception ex) {
+            x = null;
 
+        }
 
-}    
-     
-     public static Integer pedirNumeroInt(String nombreDato){
-    Integer res;
+        return x;
+
+    }
+
+    public static Integer pedirNumeroInt(String nombreDato) {
+        Integer res;
         do {
-    System.out.print("Introduzca "+ nombreDato+": ");
-    res = comprobarNumInt( sca.nextLine());
-    System.out.println();
-    }while(res == null);  // pedira el dato hasta que e introduzca un numero valido.
-    return res;
-    
-    
+            System.out.print("Introduzca " + nombreDato + ": ");
+            res = comprobarNumInt(sca.nextLine());
+            System.out.println();
+        } while (res == null);  // pedira el dato hasta que e introduzca un numero valido.
+        return res;
+
     }
-     
-     
-     public static  Integer comprobarNumInt(String numero){
-         Integer x ;
-        try{   // lo parseo y si no es un numero valido asigna a x el valor de nulo.
-           x =  Integer.parseInt(numero); 
-        }catch(Exception ex){
-            x=null;
-            
-     }
-      
-            
-            
-            return x;
-      
-        
-        
 
+    public static Integer comprobarNumInt(String numero) {
+        Integer x;
+        try {   // lo parseo y si no es un numero valido asigna a x el valor de nulo.
+            x = Integer.parseInt(numero);
+        } catch (Exception ex) {
+            x = null;
 
+        }
 
-}
+        return x;
+
+    }
 }
